@@ -18,7 +18,7 @@ router.register(r'leaderboard', LeaderboardViewSet)
 def api_root(request, format=None):
     codespace_name = os.environ.get('CODESPACE_NAME', None)
     if codespace_name:
-        base_url = f"https://{codespace_name}-8000.app.github.dev/api/"
+        base_url = f"https://{codespace_name}-90.app.github.dev/api/"
     else:
         base_url = request.build_absolute_uri('/')
     return Response({
