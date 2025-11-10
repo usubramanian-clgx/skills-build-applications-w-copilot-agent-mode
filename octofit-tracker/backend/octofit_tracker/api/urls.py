@@ -1,3 +1,4 @@
+ # Codespace URL pattern: -8000.app.github.dev
 
 import os
 from rest_framework import routers
