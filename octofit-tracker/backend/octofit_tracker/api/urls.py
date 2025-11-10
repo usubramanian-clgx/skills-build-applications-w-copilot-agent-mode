@@ -14,8 +14,6 @@ router.register(r'workouts', WorkoutViewSet)
 router.register(r'leaderboard', LeaderboardViewSet)
 
 @api_view(['GET'])
-import os
-@api_view(['GET'])
 def api_root(request, format=None):
     codespace_name = os.environ.get('CODESPACE_NAME', None)
     if codespace_name:
